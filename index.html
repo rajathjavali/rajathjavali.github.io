@@ -3,23 +3,43 @@
 <head>
 	<title>Data Visualization - RajathJavali</title>
 		<style type="text/css">
+		header, footer {
+		    padding: 1em;
+		    color: black;
+		    background-color: white;
+		    clear: left;
+		    text-align: center;
+		    font-size: 40px;
+		    border-width: 1px;
+		    border-color: black;
+		    border-style: solid;
+		}
+		h1 {
+			/*color: red;*/
+			text-shadow: 2px 2px 5px red;
+			font-size: 60px;
+			/*text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;*/
+		}
 		h2.padding1 {
 			padding-left: 20px;
 		}
 		table {
-			border: 1px solid black;
-		}
-		th {
-			text-align: center;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 		th, td {
+			text-align: center;
 			font-size: 15px;
+		}
+		th {
+			text-shadow: 0 0 3px #FF0000;
 		}
 		table {
 			text-align: left;
 			padding-left: 20px;
 			margin-bottom: 3%;
-			width: 75%;
+			width: 70%;
 		}
 		a, img {
 			align-self: center;
@@ -27,80 +47,73 @@
 	</style>
 </head>
 <body>
-	<h1 align="center">Data Visualization</h1><hr style="border: 2px solid black;">
-	<h2 align="left" class="padding1">Projects</h2>
+	<header>
+		Data Visualization
+	</header>
+	<h2 align="center" class="padding1">Projects (Click on images to explore)</h2>
 
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Data Wrangling and Tree Rendering
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj1"><img src="/DataViz/Prj1/finalTree.png" alt="Rendered Tree" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Handling D3 transitions
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj2"><img src="/DataViz/Prj2/handsOnD3.png" alt="Charts" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Fifa World Cup
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj3"><img src="/DataViz/Prj3/worldCup.png" alt="World Cup" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Fifa World Cup Brazil
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj4"><img src="/DataViz/Prj4/worldCupBrazil.png" alt="Brazil World Cup" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Data Wrangling and Tree Rendering
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj5"><img src="/DataViz/Prj5/finalTree.png" alt="Rendered Tree" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
-<table align = "center">
-	<tr>
-		<th COLSPAN="2" style = "font-size: 20px">
-			Data Wrangling and Tree Rendering
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<a href ="/DataViz/Prj6"><img src="/DataViz/Prj6/finalTree.png" alt="Rendered Tree" border= "1" style="border-width:2px;border-color:black;"></a>
-		</td>
-	</tr>
-</table>
+	<table align = "center">
+		<tr>
+			<th COLSPAN="2" style = "font-size: 20px">
+				Data Wrangling and Tree Rendering
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a align="center" href ="/DataViz/Prj1"><img src="/DataViz/Prj1/finalTree.png" alt="Rendered Tree" border= "1" style="border-width:2px;border-color:black;"></a>
+			</td>
+		</tr>
+	</table>
+	<table align = "center">
+		<tr>
+			<th COLSPAN="2" style = "font-size: 20px">
+				Handling D3 transitions
+			</th>
+		</tr>
+		<tr>
+			<td style="font-size: 15px">
+				Allows visualization among 4 datasets, Sorting first bargraph in ascending order, Randomizing data selection, and display data on hover - scatterplot.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href ="/DataViz/Prj2"><img width="800" height="600" src="/DataViz/Prj2/handsOnD3.png" alt="Charts" border= "1" style="border-width:2px;border-color:black;"></a>
+			</td>
+		</tr>
+	</table>
+	<table align = "center">
+		<tr>
+			<th COLSPAN="2" style = "font-size: 20px">
+				Fifa World Cup
+			</th>
+		</tr>
+		<tr>
+			<td style="font-size: 15px">
+				Visualizes data on past Fifa World Cup matches on a map and bar chart. BarChart click gives current year info on the map and side panel, with winning and runner up teams. On click of a country on the map displays all the years in which it took part in the World Cup. It also allows barchart to be visualized on different parameters such as Attendance, Teams, Matches, Goals.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href ="/DataViz/Prj3"><img width="800" height="600" src="/DataViz/Prj3/worldCup.png" alt="World Cup" border= "1" style="border-width:2px;border-color:black;"></a>
+			</td>
+		</tr>
+	</table>
+	<table align = "center">
+		<tr>
+			<th COLSPAN="2" style = "font-size: 20px">
+				Fifa World Cup Brazil
+			</th>
+		</tr>
+		<tr>
+			<td style="font-size: 15px">
+				Visualizes data on Fifa World Cup Brazil as an interactive table and a tree representing the rounds. Table collapses or expands on clicking a row showing details of all the matches. Hovering over the table rows, it also highlights the teams progress on the tree. Hovering over the goals visualization displays info in a tool tip. Any column can be sorting in ascending or descending order based on 2 clicks or single click.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href ="/DataViz/Prj4"><img width="800" height="600" src="/DataViz/Prj4/worldCupBrazil.png" alt="Brazil World Cup" border= "1" style="border-width:2px;border-color:black;"></a>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>
