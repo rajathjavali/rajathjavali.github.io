@@ -57,6 +57,7 @@ class ElectoralVoteChart {
                     .domain([0, totalev])
                     .range([_this.margin.left, _this.svgWidth - _this.margin.right]);    
           
+          //console.log(electionResult)
     // ******* TODO: PART II *******
     //console.log(electionResult);
 

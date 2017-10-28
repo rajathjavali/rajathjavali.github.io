@@ -158,7 +158,7 @@ class YearChart {
                 if(cx - r - 5 >= selection[0] && cx - r - 5 < selection[1])
                 {
                     if((cx + r + 5) <= selection[1])
-                        selectedStates[k++] = d3.select(this).data()[0];
+                        selectedStates[k++] = d3.select(this).data()[0].YEAR;
                 }
                 return cx;
             });
